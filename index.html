@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<title>EDM Labs ltd</title>   
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet"> 
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />    
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/> 
+</head>
+<header>
+ 
+</header>
+  <!--Body Container-->
+<body>
+    <!-- Nav Bar-->    
+    <nav class="navbar sticky-top navbar-expand-lg py-4 py-lg-2">
+      <button class="navbar-toggler ml-auto navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto pr-4">
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="#splash">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="#aboutUs">About</a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" id="contact" href="#contactUs">Contact EDM</a>                             
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <!--Welcome image / Section 1-->
+  <div class="container-fluid min-vh-100" id="splash">
+    <div class="row row-content min-vh-100">
+      <div class="col-1"></div>
+      <div class=" d-lg-flex align-items-center justify-content-center col-lg-6">
+        <img class=" col d-lg-block" src="images/edmlogo_wht.svg" id="logoFront">
+      </div>
+      <div class="my-auto mr-auto text-light col-lg-4 text-center">
+        <h1>EDM Labs Ltd.</h1>
+        <br>
+        <p class="lead text-light">We deliver precise, accurate, and dependable high-quality EDM services by our specially trained and certified technicians right here in Silicon Valley.
+        </p>
+      </div>
+    </div>
+      <img class="img-bottom d-none d-lg-inline" src="images/bottom_border_white.svg">
+  </div>             
+ <!--Contact Modal-->
+  <div id="reserveModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+              <div class="modal-header bg-secondary text-white">
+                <h3 class="modal-title">Contact EDM </h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-lg-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First">
+                      </div>
+                      <div class="form-group col-lg-6">
+                        <label for="firstName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Email</label>
+                      <input type="email" class="form-control" id="emailAddress" placeholder="@blank.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Phone Number</label>
+                      <input type="text" class="form-control" id="phoneNumber" placeholder="111-1111-111">
+                    </div>
+                    <div class="form-row ">
+                      <div class="form-group col-6">
+                        <label for="exampleFormControlTextarea1">Questions, Project Details, or information.</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                      </div>
+                        <div class="form-group col-6">
+                        <label for="exampleFormControlFile1">Supporting Documents </label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                    </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--About Us / Section 2-->
+      <div class="container" id="aboutUs">
+        <div class="row my-5 py-3">
+          <div class="col-lg-8 my-auto mx-auto"> 
+            <img class="img-fluid" src="images/Edm_collage.png" alt="EDM 1990">
+            <hr/>
+            <h2 class="text-center py-2">Serving the Sillicon Valley for more than 30 years</h2>
+            <hr/>
+            <p>Family and Veteran owned and operated EDM machine shop. Serving the Bay Area for more than 30 years. Specially trained and certified technicians. Extremely high accuracy. Minimal turn-around time. High quality services and parts delivered. All work is examined with calibrated inspection equipment. 
+            </p>
+          </div>
+        </div> 
+      </div> 
+
+<!--Services / Section 3-->
+      <div class="container-fluid blue-section text-light" id="services">
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mx-auto text-center pt-4">
+            <h2>EDM Services</h2>
+          </div>
+        </div>
+        <div class="row justify-content-around my-4">
+          <div class="col-lg-3">
+            <div class="row justify-content-center my-4">
+              <h2 >Wire</h2>
+            </div>
+            <div class="row justify-content-center my-4">
+            <img class="img-thumbnail my-4 rounded-circle"src="images/IMG_5534.PNG">
+            </div>
+            <p class="lead">Wire EDM uses an electrically charged wire electrode to vaporize and melt electrically conductive work pieces, to very smooth and accurate surfaces. The diameter of the wire electrode we use ranges from as small as .0015", and up to .012". </p>
+          </div>
+          <div class="col-lg-3 justify-content-center">
+            <div class="row justify-content-center my-4">
+              <h2>Sinker</h2>
+            </div>
+            <div class="row justify-content-center my-4">
+            <img class="img-thumbnail my-4 rounded-circle"src="images/IMG_5536.PNG">
+            </div>
+            <p class="lead">Sinker EDM uses an electrically charged Copper, Graphite or combination to vaporize and melt electrically conductive work pieces, to very smooth and accurate surfaces.</p>
+          </div>
+          <div class="col-lg-3 justify-content-center">
+            <div class="row justify-content-center my-4">
+              <h2>Drilling</h2>
+            </div>
+            <div class="row justify-content-center my-4">
+            <img class="img-thumbnail my-4 rounded-circle"src="images/IMG_5535.PNG">
+            </div>
+            <p class="lead">EDM drilling uses a precision brass tube as a drill bit that drills a hole by vaporizing and melting electrically conductive material. The diameter of the electrodes we use are anywhere from .004 to .256 of an inch in diameter.</p>
+          </div>
+          <div class="col-lg-3 justify-content-center">
+            <div class="row justify-content-center my-4">
+              <h2>Machining</h2>
+            </div>
+            <div class="row justify-content-center my-4">
+            <img class="img-thumbnail my-4 rounded-circle"src="images/IMG_5537.PNG">
+            </div>
+            <p class="lead pb-5 pb-lg-0"> EDM Labs machines shop services.</p>
+          </div>
+        </div>
+        </div>
+        <img class="img-bottom d-none d-lg-inline" src="images/bottom_border_white.svg">
+      </div>
+
+<!--Past Customers / Section 4-->
+      <div class="container text-dark" id="pastCust">
+        <div class="row justify-content-center">
+          <h2 class="pt-4">Past Customers</h2>
+        </div>
+        <hr/>
+        <div class="row justify-content-center">
+          <img class="col-lg-2 my-5" src="images/SpaceX-Logo.png" alt="EDM 1990" >
+          <img class="d-none d-lg-inline col-lg-2 my-5" src="images/SpaceX-Logo.png" alt="EDM 1990" >
+          <img class="d-none d-lg-inline col-lg-2 my-5" src="images/SpaceX-Logo.png" alt="EDM 1990" >
+          <img class="d-none d-lg-inline col-lg-2 my-5" src="images/SpaceX-Logo.png" alt="EDM 1990" >
+          <img class="d-none d-lg-inline col-lg-2 my-5" src="images/SpaceX-Logo.png" alt="EDM 1990" >
+          <img class="d-none d-lg-inline col-lg-2 my-5" src="images/SpaceX-Logo.png" alt="EDM 1990" >
+        </div>
+        </div>
+      </div>
+
+  <!--Facilitites List / Section 5 -->
+  <div class="container-fluid blue-section text-light" id="facilities">
+    <div class="d-md-block container">
+    <div class="row justify-content-center">
+      <h2 class="pt-4">Facilities List</h2>
+    </div>
+    <div class="row row-content py-5">
+      <div class="col-md-6 mx-auto">
+        <div class="row justify-content-center">
+        <div class="accordion text-dark mb-5" id="accordion">
+          <div class="card">
+            <div role="tab" class="card-header">
+              <h7>
+                <a  class="text-dark" data-toggle="collapse" data-target="#mits0">MITSUBISHI WIRE FA 30</a>
+              </h7>
+            </div>
+            <div class="collapse show" id="mits0" data-parent="#accordion">
+              <div class="card-body">
+                <p class="d-sm-block">Anti Electrolysis With Power Master Control and Corner Master </br>20 Inches Submerged with Auto Wire Thread Power Z</br>29.5 X 19.6 X 20 / 3.0 UV </p>
+              </div>
+            </div>
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h7>
+                  <a class="collapsed text-dark" data-toggle="collapse" data-target="#mits1">MITSUBISHI WIRE 90 SZ AE AWF FS</a>
+                </h7>
+              </div>
+              <div class="collapse" id="mits1" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-sm-block">Anti Electrolysis With FS Power Supply</br>Submerged with Auto Wire Thread Power Z</br>9.847 X 11.814 X 6.9</p>
+                </div>
+              </div>
+              <div class="card">
+                <div role="tab" class="card-header">
+                  <h7>
+                    <a class="collapsed text-dark" data-toggle="collapse" data-target="#mits2">MITSUBISHI WIRE FA 10S</a>
+                  </h7>
+                </div>
+                  <div class="collapse" id="mits2" data-parent="#accordion">
+                    <div class="card-body">
+                      <p class="d-sm-block">Anti Electrolysis With Power Master Control and Corner Master</br>Submerged with Auto Wire Thread Power Z</br>13.7 X 9.8 X 8.6</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div role="tab" class="card-header">
+                  <h7>
+                    <a class="collapsed text-dark" data-toggle="collapse" data-target="#drill">Current EDM DRILL CNC CT 500 w/ 24 Position Tool Changer</a>
+                  </h7>
+                </div>
+                  <div class="collapse" id="drill" data-parent="#accordion">
+                    <div class="card-body">
+                      <p class="d-sm-block">004 to .256 Diameter Electrodes</br>8.1 X 12.2 X 11.5</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div role="tab" class="card-header">
+                  <h7>
+                    <a class="collapsed text-dark" data-toggle="collapse" data-target="#mits3">MITSUBISHI CNC RAM M55J (140 AMP)</a>
+                  </h7>
+                </div>
+                  <div class="collapse" id="mits3" data-parent="#accordion">
+                    <div class="card-body">
+                      <p class="d-sm-block">16 Position ATC C Axis</br>17.72 X 13.78 X 13.78</p>
+                    </div>
+                  </div>
+              </div>
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h7>
+                  <a class="collapsed text-dark" data-toggle="collapse" data-target="#sharp">Sharp Mill w Sony .0002 DRO</a>
+                </h7>
+              </div>
+              <div class="collapse" id="sharp" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-sm-block">9 X 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h7>
+                  <a class="collapsed text-dark" data-toggle="collapse" data-target="#mitutoyo">Mitutoyo Tool Makers Microscope</a>
+                </h7>
+              </div>
+              <div class="collapse" id="mitutoyo" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-sm-block">20 Power to 200 Power</br>2 X 4 Stage</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>        
+    </div>
+    <div class="col-lg-6 mx-auto my-auto">
+        <ul class="">
+          <li class="">
+            <p>Maximum work piece dimensions (W) 29.5 X (D) 19.6 X (H) 20.00 inches thick with tapers up to 45 degrees.</p>
+          </li>
+          <li class="">
+            <p>Wire diameters range from .003 to .013.</p>
+          </li>
+          <li class="">
+            <p>EDM Drill hole sizes down to .005 diameter. We have drilled a .035 diameter hole through 13 inches thick 304 Stainless Steel.</p>
+          </li>
+          <li class="">
+            <p> Super fine surface finishing completely burr-free. We have done a 3 Finish in CD650 Carbide.</p>  
+          </li>
+          <li class="">
+            <p> Extremely high accuracy is possible with minimal turn-around time! We have held tolerances of +/-.00005 of an inch.</p>  
+          </li>
+          <li class="">
+            <p> EDM LABS LTD. examines all work using calibrated inspection equipment. Calibration records on hand. Specially trained and certified technicians available to help you!</p>  
+          </li>
+        </ul>
+    </div>        
+  </div>
+</div>
+<img class="img-bottom d-none d-lg-inline" src="images/bottom_border_white.svg">
+</div>
+  <!--Contact Us Section / Section 6-->
+  <div class="container" id="contactUs">
+    <!-- <div class="row">
+      <div class="mx-auto pt-4">
+        <h2 class="text-center">Contact</h2>
+      </div>        
+    </div> -->
+    <div class="row justify-content-around mt-4">
+      <div class="col-lg-4">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">Send us a message, question, or request a quote</p>
+        <hr/>
+        <form>
+          <div class="form-group">
+            <label for="inputAddress">Email</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="firstName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Phone Number</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="">
+          </div>
+          <div class="form-row ">
+            <div class="form-group col-6">
+              <label for="exampleFormControlTextarea1">Questions or Project Details</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+              <div class="form-group col-6">
+              <label for="exampleFormControlFile1">Supporting Documents</label>
+              <input type="file" class="form-control-file my-5" id="exampleFormControlFile1">
+            </div>
+          </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-lg-4 text-center my-auto">
+        <hr class="d-lg-none"/>
+        <img src="images/D02AD35C-DD5E-45BE-964E-0296AA502C76.png" class="border-0 d-none d-md-inline" alt="" loading="lazy" id="black_logo">
+        <p class="lead address">46709 Fremont Blvd </br> Fremont, CA </br> 94538-6539</p>
+        <a role="button" class="btn btn-link" href="tel:+15104909072"><i class="fa fa-phone"></i> 510-490-9072</a>
+        <br>
+        <a role="button" class="btn btn-link" href="mailto:sales@edmlabsltd.com"><i class="fa fa-envelope-o"></i> sales@edmlabsltd.com</a>
+      </div>
+      <div class="col-lg-4 my-auto">
+        <hr class="d-lg-none"/>
+        <div id="map"></div>
+      </div>
+    </div>
+  </div> 
+  <!--Footer-->
+  <footer class="blue-section">
+    <div class="container">
+      <div class="row">
+        <hr/>
+        <div class="col text-center p-5">
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+          <br>
+          <i class="fa fa-copyright lead"> 2022 EDM Labs</i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+  <script src="edmweb.js"></script>
+  <!-- endbuild -->
+</body>  
+</html>
