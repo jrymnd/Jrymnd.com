@@ -31,7 +31,9 @@
 .nav-link{
     color: white;
 }
-
+.splash-text{
+    color: #C48F31 !important;
+}
 #logoFront{
     height: 500px;
     opacity: 70%;
@@ -43,7 +45,7 @@
 
 #splash {
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgb(57, 57, 57) 0%, rgba(51,64,35,21) 95%);
+    background: linear-gradient(180deg, rgb(57, 57, 57) 0%, rgba(49,76,126,49) 95%);
 }
 
 .site-footer {
