@@ -21,8 +21,8 @@
 .padText {
     padding: 10rem;
 }
-.blue-section{
-    background: #06446C;
+.green-section{
+    background: #334023;
 }
 
 .navbar{
@@ -43,7 +43,7 @@
 
 #splash {
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(6,68,108,1) 95%);
+    background: linear-gradient(180deg, rgb(57, 57, 57) 0%, rgba(51,64,35,21) 95%);
 }
 
 .site-footer {
